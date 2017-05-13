@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid orange;
+            height: 30px;
+
+
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+<script src="jquery-1.11.3.min.js"></script>
+<script>
+ var obj={
+
+    "status": 200,
+    "data": {
+        "id": 0,
+        "name": "root",
+        "level": 0,
+        "children": [
+            {
+                "id": 1,
+                "name": "父节点1",
+                "level": 1,
+                "children": [
+                    {
+                        "id": 11,
+                        "name": "子节点1-1",
+                        "level": 2,
+                        "children": [
+                            {
+                                "id": 110,
+                                "name": "子节点1-1-0",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 111,
+                                "name": "子节点1-1-1",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 112,
+                                "name": "子节点1-1-2",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 114,
+                                "name": "子节点1-1-4",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            }
+                        ],
+                        "defectLevel": null
+                    },
+                    {
+                        "id": 12,
+                        "name": "子节点1-2",
+                        "level": 2,
+                        "children": [
+                            {
+                                "id": 120,
+                                "name": "子节点1-2-0",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 121,
+                                "name": "子节点1-2-1",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 122,
+                                "name": "子节点1-2-2",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 124,
+                                "name": "子节点1-2-4",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            }
+                        ],
+                        "defectLevel": null
+                    },
+                    {
+                        "id": 13,
+                        "name": "子节点1-3",
+                        "level": 2,
+                        "children": [
+                            {
+                                "id": 130,
+                                "name": "子节点1-3-0",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 131,
+                                "name": "子节点1-3-1",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 132,
+                                "name": "子节点1-3-2",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 134,
+                                "name": "子节点1-3-4",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            }
+                        ],
+                        "defectLevel": null
+                    }
+                ],
+                "defectLevel": null
+            },
+            {
+                "id": 2,
+                "name": "父节点2",
+                "level": 1,
+                "children": [
+                    {
+                        "id": 21,
+                        "name": "子节点2-1",
+                        "level": 2,
+                        "children": [
+                            {
+                                "id": 210,
+                                "name": "子节点2-1-0",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 211,
+                                "name": "子节点2-1-1",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 212,
+                                "name": "子节点2-1-2",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 214,
+                                "name": "子节点2-1-4",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            }
+                        ],
+                        "defectLevel": null
+                    },
+                    {
+                        "id": 22,
+                        "name": "子节点2-2",
+                        "level": 2,
+                        "children": [
+                            {
+                                "id": 220,
+                                "name": "子节点2-2-0",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 221,
+                                "name": "子节点2-2-1",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 222,
+                                "name": "子节点2-2-2",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 224,
+                                "name": "子节点2-2-4",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            }
+                        ],
+                        "defectLevel": null
+                    },
+                    {
+                        "id": 23,
+                        "name": "子节点2-3",
+                        "level": 2,
+                        "children": [
+                            {
+                                "id": 230,
+                                "name": "子节点2-3-0",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 231,
+                                "name": "子节点2-3-1",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 232,
+                                "name": "子节点2-3-2",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 234,
+                                "name": "子节点2-3-4",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            }
+                        ],
+                        "defectLevel": null
+                    }
+                ],
+                "defectLevel": null
+            },
+            {
+                "id": 3,
+                "name": "父节点3",
+                "level": 1,
+                "children": [
+                    {
+                        "id": 31,
+                        "name": "子节点3-1",
+                        "level": 2,
+                        "children": [
+                            {
+                                "id": 310,
+                                "name": "子节点3-1-0",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 311,
+                                "name": "子节点3-1-1",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 312,
+                                "name": "子节点3-1-2",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 314,
+                                "name": "子节点3-1-4",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            }
+                        ],
+                        "defectLevel": null
+                    },
+                    {
+                        "id": 32,
+                        "name": "子节点3-2",
+                        "level": 2,
+                        "children": [
+                            {
+                                "id": 320,
+                                "name": "子节点3-2-0",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 321,
+                                "name": "子节点3-2-1",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 322,
+                                "name": "子节点3-2-2",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 324,
+                                "name": "子节点3-2-4",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            }
+                        ],
+                        "defectLevel": null
+                    },
+                    {
+                        "id": 33,
+                        "name": "子节点3-3",
+                        "level": 2,
+                        "children": [
+                            {
+                                "id": 330,
+                                "name": "子节点3-3-0",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 331,
+                                "name": "子节点3-3-1",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 332,
+                                "name": "子节点3-3-2",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 334,
+                                "name": "子节点3-3-4",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            }
+                        ],
+                        "defectLevel": null
+                    }
+                ],
+                "defectLevel": null
+            },
+            {
+                "id": 4,
+                "name": "父节点4",
+                "level": 1,
+                "children": [
+                    {
+                        "id": 41,
+                        "name": "子节点4-1",
+                        "level": 2,
+                        "children": [
+                            {
+                                "id": 410,
+                                "name": "子节点4-1-0",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 411,
+                                "name": "子节点4-1-1",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 412,
+                                "name": "子节点4-1-2",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 414,
+                                "name": "子节点4-1-4",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            }
+                        ],
+                        "defectLevel": null
+                    },
+                    {
+                        "id": 42,
+                        "name": "子节点4-2",
+                        "level": 2,
+                        "children": [
+                            {
+                                "id": 420,
+                                "name": "子节点4-2-0",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 421,
+                                "name": "子节点4-2-1",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 422,
+                                "name": "子节点4-2-2",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 424,
+                                "name": "子节点4-2-4",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            }
+                        ],
+                        "defectLevel": null
+                    },
+                    {
+                        "id": 43,
+                        "name": "子节点4-3",
+                        "level": 2,
+                        "children": [
+                            {
+                                "id": 430,
+                                "name": "子节点4-3-0",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 431,
+                                "name": "子节点4-3-1",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 432,
+                                "name": "子节点4-3-2",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 434,
+                                "name": "子节点4-3-4",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            }
+                        ],
+                        "defectLevel": null
+                    }
+                ],
+                "defectLevel": null
+            },
+            {
+                "id": 5,
+                "name": "父节点5",
+                "level": 1,
+                "children": [
+                    {
+                        "id": 51,
+                        "name": "子节点5-1",
+                        "level": 2,
+                        "children": [
+                            {
+                                "id": 510,
+                                "name": "子节点5-1-0",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 511,
+                                "name": "子节点5-1-1",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 512,
+                                "name": "子节点5-1-2",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 514,
+                                "name": "子节点5-1-4",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            }
+                        ],
+                        "defectLevel": null
+                    },
+                    {
+                        "id": 52,
+                        "name": "子节点5-2",
+                        "level": 2,
+                        "children": [
+                            {
+                                "id": 520,
+                                "name": "子节点5-2-0",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 521,
+                                "name": "子节点5-2-1",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 522,
+                                "name": "子节点5-2-2",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 524,
+                                "name": "子节点5-2-4",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            }
+                        ],
+                        "defectLevel": null
+                    },
+                    {
+                        "id": 53,
+                        "name": "子节点5-3",
+                        "level": 2,
+                        "children": [
+                            {
+                                "id": 530,
+                                "name": "子节点5-3-0",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 531,
+                                "name": "子节点5-3-1",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 532,
+                                "name": "子节点5-3-2",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            },
+                            {
+                                "id": 534,
+                                "name": "子节点5-3-4",
+                                "level": 3,
+                                "children": null,
+                                "defectLevel": null
+                            }
+                        ],
+                        "defectLevel": null
+                    }
+                ],
+                "defectLevel": null
+            }
+        ],
+        "defectLevel": null
+    },
+    "msg": "操作成功"
+
+};
+
+function it(obj){
+    if(!!obj.children&&obj.children!=null){
+        for(var i=0;i<obj.children.length;i++){
+            var dom=$('<div>');
+            $(dom).html(obj.children[i].name).attr('id',obj.children[i].id);
+            $('body').append($(dom));
+        }
+    }
+            divClick(obj.children);
+}
+it(obj.data);
+function divClick(obj){
+
+    if(!obj){
+        alert('end');
+        return;
+    }
+
+        $('div').on('click',function(){
+
+            // console.log($(this).index())
+
+            var idName=$(this).attr('id');
+            console.log(idName);
+            console.log(obj);
+            for(var j=0;j<obj.length;j++){
+                if(obj[j].id==idName){
+                    it(obj[j]);
+                }
+            }
+        })
+    
+}
+
+
+
+</script>
+</html>

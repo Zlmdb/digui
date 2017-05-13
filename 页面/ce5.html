@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var arr = [2, 3, [4, 6, [1, 8, 2, 3, 34]], 12, 10];
+    var arrs = [];
+    // var arrb=[];
+    function getArray(arr) {
+        for (var i = 0; i < arr.length; i++) {//for循环里面的var在这里必须加上，因为每个for循环里面的i都是独立的作用域，因为要自调自己，所以每次自调i都要归零，比如，第一次for循环i=2时，要自调了，这时一个新的遍历开始，i=0了，这个i不影响上次的i的值，上次的i=2保存下来，等里面的for循环完成后，外面的那个i还是从i=2开始继续循环，因为每次的循环的i的作用域不一样，互补影响，但前提是，i必须用var来声明，要不然i就成全局的变量了，等里面的for循环完成后，以前的i就早都变了，后面的12和10就不会遍历到了。所以必须加上var.
+            if (typeof arr[i] == "number") {
+                arrs.push(arr[i]);
+            } else {
+                getArray(arr[i]);
+            }
+        }
+
+    }
+
+    getArray(arr);
+    console.log(arrs);
+</script>
+</body>
+</html>

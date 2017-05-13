@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<title></title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link href="../css/style.css" rel="stylesheet">
+<link href="../css/media.css" rel="stylesheet">
+</head>
+<body>
+    <header class="g-hd clearfix">
+    <div class="fl logo">
+        <img src="../img/logo.png" alt="雀巢数据中心">
+    </div>
+    <div class="fr hd-user">
+        <a href="javascript:userInfo.show();" class="user-info"><span class="user-name">杨洋</span>信息部</a><a href="javascript:userInfo.todolist()" class="newMsg"><i class="iconfont">&#xe62b;</i></a><a href="javascript:location.reload()"><i class="iconfont">&#xe600;</i></a><a href="javascript:userInfo.logout()"><i class="iconfont">&#xe601;</i></a>
+    </div>
+    <ul class="nav-main clearfix">
+        <li>
+            <a href="#" >收银</a>
+        </li>
+
+        <li>
+            <a href="#" >顾客</a>
+        </li>
+
+        <li>
+            <a  href="#" >物流</a>
+        </li>
+
+        <li>
+            <a href="#" >资料</a>
+        </li>
+
+        <li>
+            <a href="#"  class="current">分类</a>
+        </li>
+
+        <li>
+            <a href="#" >设置</a>
+        </li>
+    </ul>
+</header>
+
+
+		<div class="main-wrap">
+			<!-- 左侧导航 -->
+			<div class="nav-sider">
+    <ul>
+        <li><a href="goods.html" ><i class="icon-01"></i>物品分类</a></li>
+        <li><a href="goodsBrand.html" ><i class="icon-02"></i>物品品牌分类</a></li>
+        <li><a href="project.html" ><i class="icon-03"></i>项目分类</a></li>
+        <li><a href="projectBrand.html" ><i class="icon-04"></i>项目品牌分类</a></li>
+        <li><a href="treatment.html" ><i class="icon-05"></i>疗程分类</a></li>
+        <li><a href="promotion.html"  class="current"><i class="icon-06"></i>促销方案分类</a></li>
+        <li><a href="finance.html" ><i class="icon-07"></i>财务分类</a></li>
+    </ul>
+</div>
+			<div class="main-container">
+				<div class="breadcrumb">所在位置： 分类 > <span>促销方案分类</span></div>
+
+				<div class="card filterBox3">
+						<div class="form-wrap">
+							<p class="form-item">
+									<label class="label" style="max-width: 7em;">类型：</label><select name="" id="" class="select">
+										<option value="">请选择</option>
+										<option value="一级分类">一级分类</option>
+										<option value="二级分类">二级分类</option>
+										<option value="三级分类">三级分类</option>
+									</select>
+							</p>
+							<p class="form-item">
+									<label class="label" style="max-width: 7em;">分类编号：</label><input type="text" class="input-text" placeholder="请输入" name="">
+							</p>
+							<p class="form-item">
+									<label class="label">分类名称：</label><input type="text" class="input-text" placeholder="请输入" name="">
+							</p>
+							<p class="form-item">
+									<label class="label" style="max-width: 7em;">上级分类编号：</label><input type="text" class="input-text" placeholder="请输入" name="">
+							</p>
+							<p class="form-item">
+									<label class="label" style="max-width: 7em;">上级分类名称：</label><input type="text" class="input-text" placeholder="请输入" name="">
+							</p>
+						</div>
+						<div class="option text-right">
+							<a href="javascript:;" class="btn s1"><i class="icon-search"></i></a>
+						</div>
+				</div>
+				<div class="cateAddWrap"> <a href="javascript:;" class="btn s1 addCateLevel">新增分类</a></div>
+				<div id="cateList">
+					<div class="cateLevel" data-level="1">
+						<h3 class="title2">一级分类</h3>
+						<div class="cate-option text-right"><a href="javascript:;" class="addCate">&plus; 新增</a> <a href="javascript:;" class="actionCate" date-level="1" data-hassubcate="true">&times; 禁用</a></div>
+						<div class="table-box">
+							<table style="margin-bottom:0;">
+								<thead>
+									<tr>
+										<th style="width:50px;"><input type="checkbox" style="display: none;"></th>
+										<th class="text-left">分类编号</th>
+										<th class="text-left">分类名称</th>
+										<th class="text-left" width="34%">备注</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="empty">
+										<td colspan="4"> <p class="empty-table">请先新增信息</p> </td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+		</div>
+    <a href="javascript:;" class="backtop" id="backToTop">返回顶部</a>
+		<script src="../js/lib/jquery-1.11.3.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/userInfo.js"></script>
+		<script src="../js/cateManager.js"></script>
+		<script>
+		// addLevelCate();
+		// showLevelCate({"name": '面部', "no": 03867, "uppername": "面部", "upperno": "24678", "remarks": '备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注'})
+		</script>
+</body>
+</html>

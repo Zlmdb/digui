@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="divmsg"></div>
+<script>
+    var treeData=[
+        {"name":"剑侠世界",
+            "columns":[
+                {
+                    "name":"新闻中心",
+                    "columns":[
+                        {
+                            "name":"新闻",
+                            "parentId":2
+                        },
+                        {
+                            "name":"公告",
+                            "parentId":2
+                        }
+                    ],
+                    "parentId":1
+                },
+                {
+                    "name":"玩家文选",
+                    "columns":[
+                        {"name":"门派攻略","parentId":2},
+                        {"name":"玩家心情","parentId":2}
+                    ],
+                    "parentId":1
+                },
+                {
+                    "name":"游戏资料",
+                    "columns":[
+                        {"name":"游戏资料0","parentId":2},
+                        {"name":"游戏资料1","parentId":2}
+                    ],
+                    "parentId":1
+                }
+            ],
+            "parentId":0
+        },
+        {"name":"剑侠世界1",
+            "columns":[
+                {
+                    "name":"新闻中心1",
+                    "columns":[
+                        {"name":"新闻1"},
+                        {"name":"公告1"}
+                    ]
+                },
+                {
+                    "name":"玩家文选1",
+                    "columns":[
+                        {"name":"门派攻略1"},
+                        {"name":"玩家心情1"}
+                    ]
+                },
+                {
+                    "name":"游戏资料1",
+                    "columns":[
+                        {"name":"游戏资料01"},
+                        {"name":"游戏资料01"}
+                    ]
+                }
+            ],
+            "parentId":0
+        }
+    ];
+
+    function showAllNode(json){
+        for(var e in json){
+            var flag = false;// 当前元素是否是数组
+            for(var ex in json[e]){
+                flag = true;
+            }
+            if(flag){
+                showAllNode(json[e]);
+            }else if(json[e]){
+                document.getElementById("divmsg").innerHTML += e + "=" + json[e] + "<br/>";
+            }
+        }
+    }
+
+    window.onload=function(){
+        showAllNode(treeData);
+    }
+</script>
+</body>
+</html>

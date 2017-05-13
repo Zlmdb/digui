@@ -1,0 +1,145 @@
+/* 媒体查询 */
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait) {
+
+	/*ipad竖屏的css样式*/
+	.nav-main {
+		margin-left: 150px;
+	}
+	.nav-main li {
+		margin: 0 15px;
+	}
+	.hd-user .user-department {
+		margin-right: 30px;
+	}
+	.nav-sider {
+		width: 125px;
+	}
+	.nav-sider a {
+		padding-left: 8px;
+	}
+	.nav-sider [class^="icon-"] {
+		margin-right: 4px;
+	}
+	.main-container {
+		margin-left: 140px;
+		margin-right: 20px;
+	}
+	.filterBox {
+		padding: 20px 30px;
+	}
+/* 	.filterBox .form-item {
+		float: left;
+		width: 50%;
+	}
+
+	.filterBox .form-item:nth-child(5) {
+		width: 100%;
+	}*/
+	.filterBox .form-item:nth-child(6),
+	.filterBox .form-item:nth-child(7) {
+		width: 100% !important;
+	}
+	.filterBox .form-item:nth-child(6) .input-text,
+	.filterBox .form-item:nth-child(7) .input-text{
+		width: 18.5% !important;
+	}
+	.filterBox3 .form-item {
+		width: 50%;
+	}
+	.filterBox3 .label {
+		max-width: 7em;
+	}
+	.goodform .form-item {
+		width: 50%;
+	}
+	.goodform .form-item .label {
+		max-width: 7em !important;
+	} 
+
+	.goodform .box3 .form-item .input-text,
+	.goodform .box3 .form-item .select {
+		/* width: 80px; */
+	}
+	.goodform .box3 .form-item .label {
+		max-width: 9em !important;
+	}
+
+	.goodform .box4 .form-item,
+	.goodform .box5 .form-item{
+		 width: 100% !important;
+	}
+	.goodform .box4 .form-item .label,
+	.goodform .box5 .form-item .label{
+		 max-width: 14em !important;
+	}
+	.goodform .box6 dd span{
+		width: 25%;
+		margin-right: 12%;
+	}
+	.goodform .box6 dd span:nth-child(4n) {
+		margin-right: 12%;
+	}
+	.goodform .box6 dd span:nth-child(3n) {
+		margin-right: 0;
+	}
+}
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:landscape) {
+	/*ipad横屏的css样式*/
+	.main-container {
+		margin-left: 160px;
+		margin-right: 20px;
+	}
+	.filterBox {
+		padding: 20px 30px;
+	}
+/* 	.filterBox .form-item {
+		float: left;
+		width: 50%;
+	}
+
+	.filterBox .form-item:nth-child(5) {
+		width: 100%;
+	}*/
+	.filterBox .form-item:nth-child(6),
+	.filterBox .form-item:nth-child(7) {
+		width: 100% !important;
+	}
+	.filterBox .form-item:nth-child(6) .input-text,
+	.filterBox .form-item:nth-child(7) .input-text{
+		width: 18.5% !important;
+	}
+	.goodform .form-item .label {
+		width: 7em;
+	}
+	.goodform .form-item.s2 .label {
+		width: 4em;
+	}
+	.goodform .form-item.s3 .label {
+		width: 6em;
+	}
+	.goodform .form-item.s4{
+		width: 100%;
+	}
+	.goodform .form-item .input-text,
+	.goodform .form-item .select {
+		width: 120px;
+	}
+	.goodform .form-item.item2 .input-text,
+	.goodform .form-item.item2 .select {
+		width: 55px;
+	}
+
+	.goodform .box3 .form-item .input-text,
+	.goodform .box3 .form-item .select {
+		width: 100px;
+	}
+	.goodform .box4 .form-item,
+	.goodform .box5 .form-item{
+		 width: 50%;
+	}
+	.goodform .box4 .form-item .label,
+	.goodform .box5 .form-item .label{
+		 width: 14em;
+	}
+
+}

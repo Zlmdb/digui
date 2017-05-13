@@ -1,0 +1,25 @@
+private String code;							物品编号
+private String name;							物品名称
+private Integer[] categoryids;					物品分类ID 表中自有
+private Integer[] brandids;						物品品牌ID
+private BigDecimal face_price_max;				最大面价
+private BigDecimal face_price_min;		
+private BigDecimal sale_price_max;				售价
+private BigDecimal sale_price_min;
+private BigDecimal allocation_price_max;  		调拨价
+private BigDecimal allocation_price_min;
+private BigDecimal purchase_price_max;			采购价
+private BigDecimal purchase_price_min;		
+private BigDecimal staff_price_max;				内部员工价
+private BigDecimal staff_price_min;
+private String finance_no;						财务分类编号 （财务分类表中）
+private String finance_name;					财务分类名称
+private String is_discount;						是否折扣     （0,1）
+private String is_beauty;						//取货美容师是否算提成 （0,1）
+private String is_ad;							//取货顾问是否算提成（0,1）
+private String is_sale;							是否可售  （0,1）
+private String status;							状态（编辑中，审核???）（0,1，2,3）
+private Integer company_id;						公司ID
+private String del;								是否禁用  				（y/n）
+private String[] nosalesIds;					不可售门店ID 
+private String[] nopickIds;	                 	不可取货门ID

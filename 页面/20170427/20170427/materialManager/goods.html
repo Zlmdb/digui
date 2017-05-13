@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<title></title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link href="../css/style.css" rel="stylesheet">
+<link href="../css/media.css" rel="stylesheet">
+</head>
+<body>
+    <header class="g-hd clearfix">
+    <div class="fl logo">
+        <img src="../img/logo.png" alt="雀巢数据中心">
+    </div>
+    <div class="fr hd-user">
+        <a href="javascript:userInfo.show();" class="user-info"><span class="user-name">杨洋</span>信息部</a><a href="javascript:userInfo.todolist()" class="newMsg"><i class="iconfont">&#xe62b;</i></a><a href="javascript:location.reload()"><i class="iconfont">&#xe600;</i></a><a href="javascript:userInfo.logout()"><i class="iconfont">&#xe601;</i></a>
+    </div>
+    <ul class="nav-main clearfix">
+        <li>
+            <a href="#" >收银</a>
+        </li>
+
+        <li>
+            <a href="#" >顾客</a>
+        </li>
+
+        <li>
+            <a  href="#" >物流</a>
+        </li>
+
+        <li>
+            <a href="#"  class="current">资料</a>
+        </li>
+
+        <li>
+            <a href="#" >分类</a>
+        </li>
+
+        <li>
+            <a href="#" >设置</a>
+        </li>
+    </ul>
+</header>
+
+
+		<div class="main-wrap">
+			<!-- 左侧导航 -->
+			<div class="nav-sider">
+		
+    <ul>
+        <li><a href="goods.html"  class="current"><i class="icon-01"></i>物品资料</a></li>
+        <li><a href="project.html" ><i class="icon-02"></i>项目资料</a></li>
+        <li><a href="treatment.html" ><i class="icon-03"></i>疗程资料</a></li>
+        <li><a href="promotion.html" ><i class="icon-04"></i>促销方案</a></li>
+        <li><a href="card.html" ><i class="icon-05"></i>会员卡资料</a></li>
+        <li><a href="updateCard.html" ><i class="icon-06"></i>会员卡升级</a></li>
+        <li><a href="openCard.html" ><i class="icon-07"></i>批量开卡</a></li>
+    </ul>
+</div>
+			<div class="main-container">
+				<div class="breadcrumb">所在位置： 资料 > <span>物品资料</span></div>
+
+				<div class="card filterBox">
+					<div class="result"></div>
+					<div>
+						<dl class="clearfix">
+							<dt>归类</dt>
+							<dd class="cateFilter">
+								<div class="tab-hd"><a href="javascript:;" data-target="cate" class="active"> 分类 <i class="iconfont">&#xe627;</i></a><a href="javascript:;" data-target="brand">品牌 <i class="iconfont">&#xe627;</i></a></div>
+								<div class="cate tab-bd">
+									<div class="parts">
+										<a href="javascript:;" class="active">面部</a><a href="javascript:;">足部</a><a href="javascript:;">胸部</a>
+									</div>
+
+									<div class="item1" style="display:none">
+										<a href="javascript:;">面部祛痘</a><a href="javascript:;">面部补水</a><a href="javascript:;">面部塑形</a>
+									</div>
+									<div class="item" style="display:none">
+										<a href="javascript:;">面部祛痘</a><a href="javascript:;">面部补水</a><a href="javascript:;">面部塑形</a>
+									</div>
+								</div>
+								<div class="brand tab-bd" style="display: none;">
+										<a href="javascript:;">品牌1</a><a href="javascript:;">品牌2</a><a href="javascript:;">品牌3</a><a href="javascript:;">品牌4</a>
+								</div>
+								<div class="line"></div>
+							</dd>
+						</dl>
+
+						<dl class="clearfix">
+							<dt>性质</dt>
+							<dd>
+								<label class="input-checkbox"><input type="checkbox" name="nature"><i></i>打折</label><label class="input-checkbox"><input type="checkbox" name="nature"><i></i>禁用</label><label class="input-checkbox"><input type="checkbox" name="nature"><i></i>是卖品</label><label class="input-checkbox" style="width: 160px;"><input type="checkbox" name="nature"><i></i>取货顾问算提成</label><label class="input-checkbox" style="width: 160px;"><input type="checkbox" name="nature"><i></i>取货美容师算提成</label>
+							</dd>
+						</dl>
+
+						<dl class="clearfix">
+							<dt>状态</dt>
+							<dd>
+								<label class="input-checkbox"><input type="checkbox"><i></i>待编辑</label><label class="input-checkbox"><input type="checkbox"><i></i>带审核</label><label class="input-checkbox"><input type="checkbox"><i></i>审核通过</label><label class="input-checkbox"><input type="checkbox"><i></i>驳回</label>
+							</dd>
+						</dl>
+
+						<dl class="clearfix">
+							<dt>范围</dt>
+							<dd>
+								<div class="tab-hd"><a href="javascript:;" data-target="storeList">不可销售部门 <i class="iconfont">&#xe627;</i></a><a href="javascript:;" data-target="storeList">不可取货部门 <i class="iconfont">&#xe627;</i></a><a href="javascript:;" data-target="priceRange">面价 <i class="iconfont">&#xe627;</i></a><a href="javascript:;" data-target="priceRange">销售价 <i class="iconfont">&#xe627;</i></a></div>
+								<div class="tab-bd storeList">
+									<label class="input-checkbox" style="width: 160px;"><input type="checkbox"><i></i>西湖华元店</label><label class="input-checkbox" style="width: 160px;"><input type="checkbox"><i></i>解放路店</label><label class="input-checkbox" style="width: 160px;"><input type="checkbox"><i></i>浙大店</label><label class="input-checkbox" style="width: 160px;"><input type="checkbox"><i></i>庆春银泰店</label><label class="input-checkbox" style="width: 160px;"><input type="checkbox"><i></i>武林店</label><label class="input-checkbox" style="width: 160px;"><input type="checkbox"><i></i>黄龙店</label><label class="input-checkbox" style="width: 160px;"><input type="checkbox"><i></i>春江店</label><label class="input-checkbox" style="width: 160px;"><input type="checkbox"><i></i>城西银泰店</label><label class="input-checkbox" style="width: 160px;"><input type="checkbox"><i></i>文一店</label><label class="input-checkbox" style="width: 160px;"><input type="checkbox"><i></i>朝晖店</label><label class="input-checkbox" style="width: 160px;"><input type="checkbox"><i></i>柯桥店</label>
+								</div>
+								<div class="tab-bd priceRange" style="padding:14px 0; display: none;">
+									<span class="label">价格区间:</span> <input type="text" class="input-text" name="minPrice"> 至 <input class="input-text" type="text" name="maxPrice">
+								</div>
+							</dd>
+						</dl>
+						<div class="collapse" style="display: none;">
+							<div class="form-wrap">
+								<p class="form-item">
+										<label class="label" style="max-width: 6.5em;">物品编号：</label><input type="text" class="input-text" placeholder="输入" name="goodsNo">
+								</p>
+								<p class="form-item">
+										<label class="label">财务分类编号：</label><input type="text" class="input-text" placeholder="输入" name="goodsNo">
+								</p>
+								<p class="form-item">
+										<label class="label">财务分类名称：</label><input type="text" class="input-text" placeholder="输入" name="goodsNo">
+								</p>
+								<p class="form-item">
+										<label class="label" style="max-width: 6.5em;">物品名称：</label><input type="text" class="input-text" placeholder="输入" name="goodsNo">
+								</p>
+								<p class="form-item" style="width: 66%;">
+										<label class="label">员工购买价/(元)：</label><input type="text" class="input-text" name="minPrice" placeholder="最低价" style="width:28%;"> 至 <input type="text"  placeholder="最高价" class="input-text" name="maxPrice" style="width:28%;">
+								</p>
+								<p class="form-item" style="width: 50%;">
+										<label class="label" style="max-width: 6.5em;">调拨价/(元)：</label><input type="text" class="input-text" name="minPrice" placeholder="最低价" style="width: 37%;"> 至 <input type="text" class="input-text" name="maxPrice" placeholder="最高价" style="width: 37%;">
+								</p>
+								<p class="form-item" style="width: 50%;">
+										<label class="label" style="max-width: 6.5em;">采购价/(元)：</label><input type="text" class="input-text"  placeholder="最低价" name="minPrice" style="width: 37%;"> 至 <input type="text" class="input-text"  placeholder="最高价" name="maxPrice" style="width: 37%;">
+								</p>
+							</div>
+						</div>
+						<div class="option text-right">
+							<a href="javascript:;" class="btn s1"><i class="icon-search"></i></a>
+							<a href="javascript:;" class="btn-collapse"><i class="icon-collapse"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="tool-bar">
+					<a href="javascript:;" data-sort="no" class="sortFilter">按编号排序<i></i></a><a href="javascript:;" data-sort="name" class="sortFilter">按名称排序<i></i></a><a href="javascript:;" data-sort="sales" class="sortFilter">按销售排序<i></i></a><a href="javascript:;" data-sort="price"  class="sortFilter">按面价排序<i></i></a>
+					<span class="right">
+						<a href="addGoods.html" class="btnAdd"><i class="iconfont icon-plus"></i> 添加</a><a href="javascript:;" class="btnDisable"><i class="iconfont icon-disable"></i> 禁用</a><a href="javascript:;" class="btnExport"><i class="iconfont icon-export"></i> 导出</a>
+					</span>
+				</div>
+				<div class="table-box">
+					<table>
+						<thead>
+							<tr><th>编号</th><th>名称</th><th>规格/(ml)</th><th>面价/(元)</th><th>销售价/(元)</th><th>是否打折</th><th>状态</th></tr>
+						</thead>
+						<tbody>
+							<tr><td>01</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>02</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>03</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>04</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>05</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>06</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>07</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>08</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>09</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>10</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>11</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>12</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>13</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>14</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>15</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>16</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>17</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>18</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>19</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>20</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>21</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>22</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>23</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>24</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>25</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>26</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>27</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>28</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>29</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+							<tr><td>30</td><td>面霜</td><td>500</td><td>500</td><td>500</td><td>是</td><td>待编辑</td></tr>
+						</tbody>
+					</table>
+					<div class="pagelist">
+						<span class="total">共1200条记录</span><a href="javascript:;" class="prev">上一页</a><a href="1" class="cur">1</a><a href="2">2</a><a href="3">3</a><a href="4">4</a><span class="dot">...</span><a href="24">24</a><a href="javascript:;" class="next">下一页</a>
+					</div>
+				</div>
+		</div>
+    <a href="javascript:;" class="backtop" id="backToTop">返回顶部</a>
+		<script src="../js/lib/jquery-1.11.3.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/userInfo.js"></script>
+		<script src="../js/goods.js"></script>
+		<script>
+		
+		</script>
+</body>
+</html>
